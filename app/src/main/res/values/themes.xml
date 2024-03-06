@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimery</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="font">@font/open_sans_extrabold</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="Theme.MY_QUIZ" parent="Base.Theme.MY_QUIZ" />

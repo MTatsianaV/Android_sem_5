@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">MY_QUIZ</string>
-    <string name="start">Продолжить</string>
+    <string name="start">Начать!</string>
+    <string name="main_greetings">Привет! Вы готовы начать?</string>
+    <string name="button_back">Назад</string>
+    <string name="button_send">Отправить</string>
+    <string name="button_start_again">Начать заново</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

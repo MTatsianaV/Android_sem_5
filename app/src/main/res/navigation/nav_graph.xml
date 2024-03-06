@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentStart">
+
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="com.mortatval.my_quiz.FragmentStart"
+        android:label="FragmentStart"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentQuestions"
+            app:destination="@id/fragmentQuestions"
+            app:popUpTo="@id/fragmentStart"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuestions"
+        android:name="com.mortatval.my_quiz.FragmentQuestions"
+        android:label="FragmentQuestions"
+        tools:layout="@layout/fragment_questions" >
+        <action
+            android:id="@+id/action_fragmentQuestions_to_fragmentResults"
+            app:destination="@id/fragmentResults" />
+        <action
+            android:id="@+id/action_fragmentQuestions_to_fragmentStart"
+            app:destination="@id/fragmentStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentResults"
+        android:name="com.mortatval.my_quiz.FragmentResults"
+        android:label="FragmentResults"
+        tools:layout="@layout/fragment_results" >
+
+        <action
+            android:id="@+id/action_fragmentResults_to_fragmentStart"
+            app:destination="@id/fragmentStart"
+            />
+        <action
+            android:id="@+id/action_fragmentResults_to_fragmentQuestions"
+            app:destination="@id/fragmentQuestions" />
+    </fragment>
+</navigation>
